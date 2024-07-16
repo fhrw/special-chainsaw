@@ -60,7 +60,3 @@ func (e *OtherEnv) Getter(id foo.Id) (foo.Foo, error) {
 	e.LogChan <- "Getter got something"
 	return gotJourn, nil
 }
-
-type event struct {
-	message string
-}
